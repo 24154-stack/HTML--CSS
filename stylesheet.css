@@ -1,3 +1,10 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+}
+
 body, html{
     height: 100%;
 }
@@ -19,4 +26,40 @@ body, html{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.info {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.two-column {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.two-column .image {
+    flex: 1;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.two-column .info {
+    flex: 2.5;
+}
+
+.two-column:nth-of-type(even) {
+    flex-direction: row-reverse;
 }
